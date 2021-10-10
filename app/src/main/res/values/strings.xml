@@ -1,3 +1,46 @@
 <resources>
-    <string name="app_name">ClothingStore</string>
+    <string name="app_name">MODA Store</string>
+    <!-- Labels -->
+    <string name="email">Correo</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="phone">Telefono</string>
+    <string name="category_woman">Mujer</string>
+    <string name="category_man">Hombre</string>
+    <string name="category_kids">Niños</string>
+    <string name="purchase">Compras</string>
+    <string name="cart">Carrito de compras</string>
+    <string name="profile">Perfil</string>
+    <string name="configuration">Configuración</string>
+    <string name="configuration_account_data">Datos de cuenta</string>
+    <string name="configuration_payment">Métodos de pago</string>
+    <string name="configuration_address">Direcciones</string>
+    <string name="favorite">Favoritos</string>
+    <string name="credit_card">Tarjeta de credito</string>
+    <string name="debit_card">Tarjeta de debito</string>
+
+    <!-- Botones -->
+    <string name="search">Buscar</string>
+    <string name="sign_in_question">¿Eres nuevo? Regístrate</string>
+    <string name="log_ing">Iniciar sesión</string>
+    <string name="add_cart">Agregar al carrito</string>
+    <string name="make_purchase">Realizar compra</string>
+    <string name="log_out">Cerrar sesió</string>
+
+
+    <!-- Datos del producto -->
+    <string name="product_name">Niños</string>
+    <string name="product_price">Niños</string>
+
+    <!-- Datos de compra -->
+    <string name="purchase_id">1000000</string>
+    <string name="purchase_total">$ 7,213.00</string>
+
+    <!-- Notificaciones -->
+    <string name="transaction_description">Notificaciones relacionado a compras realizadas</string>
+    <string name="action_title">Compra Exitosa</string>
+    <string name="action_body">¡Tu compra se ha realizado correctamente, continua explorando en nuestra tienda!</string>
+    <string name="action_title_data_config">Datos Actualizados</string>
+    <string name="action_body_data_config">¡Tu información personal ha sido actualizada correctamente </string>
+
 </resources>
