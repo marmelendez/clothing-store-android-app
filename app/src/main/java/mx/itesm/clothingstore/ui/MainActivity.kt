@@ -1,4 +1,4 @@
-package mx.itesm.clothingstore
+package mx.itesm.clothingstore.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
