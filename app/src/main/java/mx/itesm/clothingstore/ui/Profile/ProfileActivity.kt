@@ -29,20 +29,20 @@ class ProfileActivity : AppCompatActivity() {
         popupMenu.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.menu_data -> {
-                    /*val bundle = Bundle()
-                    bundle.putString(USERNAME, username)
-
-                    val intent = Intent(this, ConfigAccountDataActivity::class.java).apply {
-                        putExtras(bundle)
-                    }
-
-                    startActivity(intent)*/
+                    val intent = Intent(applicationContext, ConfigurationActivity::class.java)
+                    intent.putExtra("type", "data")
+                    startActivity(intent)
                 }
                 R.id.menu_address -> {
+                    val intent = Intent(applicationContext, ConfigurationActivity::class.java)
+                    intent.putExtra("type", "address")
+                    startActivity(intent)
 
                 }
                 R.id.menu_payment -> {
-
+                    val intent = Intent(applicationContext, ConfigurationActivity::class.java)
+                    intent.putExtra("type", "payment")
+                    startActivity(intent)
                 }
                 R.id.menu_logout -> {
 
