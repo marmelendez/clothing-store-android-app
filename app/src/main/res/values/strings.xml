@@ -42,5 +42,7 @@
     <string name="action_body">¡Tu compra se ha realizado correctamente, continua explorando en nuestra tienda!</string>
     <string name="action_title_data_config">Datos Actualizados</string>
     <string name="action_body_data_config">¡Tu información personal ha sido actualizada correctamente </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
