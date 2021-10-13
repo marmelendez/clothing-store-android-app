@@ -1,15 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.Profile.ConfigDataFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/fragConfigDataTvUsername"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <ImageButton
+        android:id="@+id/fragConfigDataIbEditUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_edit"
+        android:contentDescription="@string/configuration"
+        app:layout_constraintBottom_toBottomOf="@+id/fragConfigDataTvUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fragConfigDataEtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input"
+        android:hint="@string/username"
+        android:autofillHints="name"
+        android:inputType="text"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragConfigDataTvUsername" />
+
+    <TextView
+        android:id="@+id/fragConfigDataTvEmail"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragConfigDataEtUsername" />
+
+    <ImageButton
+        android:id="@+id/fragConfigDataIbEditEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="@color/white"
+        android:contentDescription="@string/configuration"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/fragConfigDataTvEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragConfigDataTvEmail" />
+
+    <EditText
+        android:id="@+id/fragConfigDataEtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input"
+        android:hint="@string/email"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragConfigDataTvEmail" />
+
+    <TextView
+        android:id="@+id/fragConfigDataTvPassword"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragConfigDataEtEmail" />
+
+    <ImageButton
+        android:id="@+id/fragConfigDataIbEditPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="@color/white"
+        android:contentDescription="@string/configuration"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/fragConfigDataTvPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragConfigDataTvPassword" />
+
+    <EditText
+        android:id="@+id/fragConfigDataEtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input"
+        android:hint="@string/password"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragConfigDataTvPassword" />
+
+    <Button
+        android:id="@+id/fragConfigDataBtnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        style="@style/generalButton"
+        android:text="@string/update"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragConfigDataEtPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

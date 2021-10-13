@@ -26,6 +26,7 @@
     <string name="add_cart">Agregar al carrito</string>
     <string name="make_purchase">Realizar compra</string>
     <string name="log_out">Cerrar sesión</string>
+    <string name="update">Actualizar</string>
 
 
     <!-- Datos del producto -->

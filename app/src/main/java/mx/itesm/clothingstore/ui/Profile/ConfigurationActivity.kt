@@ -18,7 +18,7 @@ class ConfigurationActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val extras = intent.extras
-        var type = ""
+        var type = "data"
         if (extras != null) {
             type = extras.getString("type").toString()
             when (type) {
@@ -28,6 +28,10 @@ class ConfigurationActivity : AppCompatActivity() {
             }
         } else {
             Toast.makeText(this, "No se pudo obtener la información", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.configIbReturn.setOnClickListener {
+            finish()
         }
     }
 
