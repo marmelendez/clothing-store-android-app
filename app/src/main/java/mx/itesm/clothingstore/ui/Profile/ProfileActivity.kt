@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import androidx.appcompat.widget.PopupMenu
 import mx.itesm.clothingstore.R
 import mx.itesm.clothingstore.databinding.ActivityProfileBinding
@@ -20,6 +21,46 @@ class ProfileActivity : AppCompatActivity() {
         binding.profileIbSettings.setOnClickListener {
             showConfigMenu(it)
         }
+
+        binding.profileTvFavorites.setOnClickListener {
+            displayFragment(
+                binding.profileTvFavorites,
+                binding.profileTvPurchase,
+                FavoriteFragment()
+            )
+
+        }
+
+        binding.profileTvPurchase.setOnClickListener {
+            displayFragment(
+                binding.profileTvPurchase,
+                binding.profileTvFavorites,
+                null,
+                PurchaseFragment()
+            )
+
+        }
+    }
+
+    fun displayFragment(active: TextView, inactive: TextView, favoriteFrag: FavoriteFragment? = null, purchaseFrag: PurchaseFragment? = null) {
+        active.setTextColor(resources.getColor(R.color.primary_blue))
+        inactive.setTextColor(resources.getColor(R.color.primary_black))
+        val currentFragment = supportFragmentManager.findFragmentByTag(TAG_FRAGMENT)
+        val transaction = supportFragmentManager.beginTransaction()
+        if(currentFragment != null) {
+            transaction.remove(currentFragment)
+        }
+        if (favoriteFrag != null) {
+            transaction.add(R.id.profileFcContainer, favoriteFrag, TAG_FRAGMENT)
+            transaction.commit()
+        } else if (purchaseFrag != null) {
+            transaction.add(R.id.profileFcContainer, purchaseFrag, TAG_FRAGMENT)
+            transaction.commit()
+        }
+    }
+
+    companion object{
+        private const val TAG_FRAGMENT= "fragment"
     }
 
     private fun showConfigMenu(view: View) {

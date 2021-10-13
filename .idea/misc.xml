@@ -5,14 +5,18 @@
       <map>
         <entry key="app/src/main/res/drawable/btn_fill.xml" value="0.26927083333333335" />
         <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.26927083333333335" />
+        <entry key="app/src/main/res/drawable/ic_favorite.xml" value="0.26927083333333335" />
+        <entry key="app/src/main/res/drawable/ic_purchase.xml" value="0.26927083333333335" />
         <entry key="app/src/main/res/drawable/ic_return.xml" value="0.26927083333333335" />
         <entry key="app/src/main/res/drawable/ic_settings.xml" value="0.1390625" />
         <entry key="app/src/main/res/font/nunito_bold.xml" value="0.15989583333333332" />
         <entry key="app/src/main/res/layout/activity_configuration.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.17696629213483145" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_config_address.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_config_data.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_config_payment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_favorite.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/fragment_purchase.xml" value="0.2390625" />
         <entry key="app/src/main/res/menu/configuration_menu.xml" value="0.253125" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26927083333333335" />
       </map>
