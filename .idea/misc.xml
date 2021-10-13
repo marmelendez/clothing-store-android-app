@@ -10,7 +10,7 @@
         <entry key="app/src/main/res/font/nunito_bold.xml" value="0.15989583333333332" />
         <entry key="app/src/main/res/layout/activity_configuration.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.17696629213483145" />
-        <entry key="app/src/main/res/layout/fragment_config_address.xml" value="0.10885416666666667" />
+        <entry key="app/src/main/res/layout/fragment_config_address.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_config_data.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_config_payment.xml" value="0.10885416666666667" />
         <entry key="app/src/main/res/menu/configuration_menu.xml" value="0.253125" />
