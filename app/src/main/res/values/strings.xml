@@ -27,11 +27,12 @@
     <string name="make_purchase">Realizar compra</string>
     <string name="log_out">Cerrar sesión</string>
     <string name="update">Actualizar</string>
+    <string name="delete_favorite">Eliminar favorito</string>
 
 
     <!-- Datos del producto -->
-    <string name="product_name">Niños</string>
-    <string name="product_price">Niños</string>
+    <string name="product_name">Producto</string>
+    <string name="product_price">$ 350.00</string>
 
     <!-- Datos de compra -->
     <string name="purchase_id">1000000</string>
