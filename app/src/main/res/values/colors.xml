@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="primary_blue">#8199BC</color>
+    <color name="secondary_blue">#b4c8e5</color>
     <color name="primary_black">#393E46</color>
     <color name="primary_darkgrey">#5A5F66</color>
     <color name="primary_lightgrey">#989898</color>

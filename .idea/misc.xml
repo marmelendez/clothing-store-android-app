@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.26927083333333335" />
         <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.26927083333333335" />
         <entry key="app/src/main/res/drawable/ic_favorite.xml" value="0.26927083333333335" />
+        <entry key="app/src/main/res/drawable/ic_list.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/drawable/ic_purchase.xml" value="0.26927083333333335" />
         <entry key="app/src/main/res/drawable/ic_return.xml" value="0.26927083333333335" />
         <entry key="app/src/main/res/drawable/ic_settings.xml" value="0.1390625" />
@@ -21,6 +22,7 @@
         <entry key="app/src/main/res/layout/fragment_purchase.xml" value="0.2390625" />
         <entry key="app/src/main/res/layout/product_favorite_item.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/product_item.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/purchase_item.xml" value="0.25" />
         <entry key="app/src/main/res/menu/configuration_menu.xml" value="0.253125" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26927083333333335" />
       </map>

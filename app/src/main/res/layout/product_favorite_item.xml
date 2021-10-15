@@ -10,7 +10,7 @@
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
-        app:cardMaxElevation="12dp"
+        app:cardMaxElevation="8dp"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +21,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp">
+            android:padding="8dp">
 
             <ImageView
                 android:id="@+id/productIv"
@@ -38,6 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                style="@style/label"
                 android:text="@string/product_name"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/productIv" />
@@ -47,6 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                style="@style/input"
                 android:text="@string/product_price"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

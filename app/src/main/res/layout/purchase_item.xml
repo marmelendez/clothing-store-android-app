@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/purchaseTvID"
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/purchaseTvIDvalue"
+                style="@style/input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="@string/purchase_id"
+                app:layout_constraintBottom_toBottomOf="@+id/purchaseTvID"
+                app:layout_constraintStart_toEndOf="@+id/purchaseTvID"
+                app:layout_constraintTop_toTopOf="@+id/purchaseTvID" />
+
+            <TextView
+                android:id="@+id/purchaseTvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/label"
+                android:text="@string/total"
+                app:layout_constraintStart_toStartOf="@+id/purchaseTvID"
+                app:layout_constraintTop_toBottomOf="@+id/purchaseTvID" />
+
+            <TextView
+                android:id="@+id/purchaseTvTotalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/input"
+                android:text="@string/purchase_total"
+                app:layout_constraintBottom_toBottomOf="@+id/purchaseTvTotal"
+                app:layout_constraintStart_toStartOf="@+id/purchaseTvIDvalue"
+                app:layout_constraintTop_toTopOf="@+id/purchaseTvTotal" />
+
+            <TextView
+                android:id="@+id/purchaseTvPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/label"
+                android:text="@string/payment"
+                app:layout_constraintStart_toStartOf="@+id/purchaseTvTotal"
+                app:layout_constraintTop_toBottomOf="@+id/purchaseTvTotal" />
+
+            <TextView
+                android:id="@+id/purchaseTvPaymentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/input"
+                android:text="@string/purchase_payment"
+                app:layout_constraintBottom_toBottomOf="@+id/purchaseTvPayment"
+                app:layout_constraintStart_toStartOf="@+id/purchaseTvTotalValue"
+                app:layout_constraintTop_toTopOf="@+id/purchaseTvPayment" />
+
+            <TextView
+                android:id="@+id/purchaseTvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/label"
+                android:text="@string/ship_address"
+                app:layout_constraintStart_toStartOf="@+id/purchaseTvPayment"
+                app:layout_constraintTop_toBottomOf="@+id/purchaseTvPayment" />
+
+            <TextView
+                android:id="@+id/purchaseTvAddressValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/input"
+                android:text="@string/purchase_address"
+                app:layout_constraintBottom_toBottomOf="@+id/purchaseTvAddress"
+                app:layout_constraintStart_toStartOf="@+id/purchaseTvPaymentValue"
+                app:layout_constraintTop_toTopOf="@+id/purchaseTvAddress" />
+
+            <TextView
+                android:id="@+id/purchaseTvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/label"
+                android:text="@string/date"
+                app:layout_constraintStart_toStartOf="@+id/purchaseTvAddress"
+                app:layout_constraintTop_toBottomOf="@+id/purchaseTvAddress" />
+
+            <TextView
+                android:id="@+id/productTvDateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                style="@style/input"
+                android:text="@string/purchase_date"
+                app:layout_constraintBottom_toBottomOf="@+id/purchaseTvDate"
+                app:layout_constraintStart_toStartOf="@+id/purchaseTvAddressValue"
+                app:layout_constraintTop_toTopOf="@+id/purchaseTvDate" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                style="@style/label"
+                android:text="@string/purchase_list"
+                android:textAlignment="center"
+                android:drawableBottom="@drawable/ic_list"
+                android:background="@color/secondary_blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/purchaseTvDate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

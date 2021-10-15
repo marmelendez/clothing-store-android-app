@@ -43,13 +43,13 @@ class FavoriteFragment() : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_favorite, container, false)
 
-
         favoritesList = mutableListOf()
         fillFavoritesList()
         recyclerList = view.findViewById(R.id.fragFavoritesRvRecycler)
         recyclerList.layoutManager = GridLayoutManager(context,2)
         val favoritesAdapter = RecyclerAdapterFavorites(favoritesList)
         recyclerList.adapter = favoritesAdapter
+
         return view
     }
 

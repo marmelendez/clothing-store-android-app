@@ -1,11 +1,17 @@
 package mx.itesm.clothingstore.ui.Profile
 
+import RecyclerAdapterPurchases
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import mx.itesm.clothingstore.R
+import mx.itesm.clothingstore.data.model.Product
+import mx.itesm.clothingstore.data.model.Purchase
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +27,8 @@ class PurchaseFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var recyclerList: RecyclerView
+    private lateinit var purchaseList: MutableList<Purchase>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,8 +42,24 @@ class PurchaseFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_purchase, container, false)
+        val view = inflater.inflate(R.layout.fragment_purchase, container, false)
+
+        purchaseList = mutableListOf()
+        fillPurchaseList()
+        recyclerList = view.findViewById(R.id.fragPurchaseRvRecycler)
+        recyclerList.layoutManager = LinearLayoutManager(context)
+        val favoritesAdapter = RecyclerAdapterPurchases(purchaseList)
+        recyclerList.adapter = favoritesAdapter
+
+        return view
+    }
+
+    private fun fillPurchaseList() {
+        purchaseList.add(Purchase(1,812.12F, "Credit card", "Calle 7", "07/02/2021",listOf(Product("blusa", 123F))))
+        purchaseList.add(Purchase(2,950.00F, "Debit card", "Calle 8", "08/03/2021",listOf(Product("blusa", 123F))))
+        purchaseList.add(Purchase(3,500.00F, "Credit card", "Calle 9", "09/04/2021",listOf(Product("blusa", 123F))))
+        purchaseList.add(Purchase(4,450.50F, "Debit card", "Calle 10", "10/05/2021",listOf(Product("blusa", 123F))))
+        purchaseList.add(Purchase(5,800.00F, "Credit card", "Calle 11", "11/06/2021",listOf(Product("blusa", 123F))))
     }
 
     companion object {

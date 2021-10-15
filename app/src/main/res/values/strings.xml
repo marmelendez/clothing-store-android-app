@@ -35,8 +35,17 @@
     <string name="product_price">$ 350.00</string>
 
     <!-- Datos de compra -->
+    <string name="id">ID</string>
+    <string name="total">Total</string>
+    <string name="payment">Pago</string>
+    <string name="ship_address">Dirección \nde envio</string>
+    <string name="date">Fecha \nde compra</string>
     <string name="purchase_id">1000000</string>
     <string name="purchase_total">$ 7,213.00</string>
+    <string name="purchase_date">dd/mm/aaaa</string>
+    <string name="purchase_address">Calle 7 35150 Lerdo, Durango</string>
+    <string name="purchase_payment">Credit card *4080</string>
+    <string name="purchase_list">Lista de articulos</string>
 
     <!-- Notificaciones -->
     <string name="transaction_description">Notificaciones relacionado a compras realizadas</string>
