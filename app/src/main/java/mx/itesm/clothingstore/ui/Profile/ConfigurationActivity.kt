@@ -31,6 +31,7 @@ class ConfigurationActivity : AppCompatActivity() {
         }
 
         binding.configIbReturn.setOnClickListener {
+            //throw RuntimeException("Test Crash")
             finish()
         }
     }
